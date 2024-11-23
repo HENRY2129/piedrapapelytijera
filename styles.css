@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #1c2b4d;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #1c2b4d;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    color: #1c2b4d;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e66a6;  /* Azul metálico */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #1e4d7d;
+}
+
+.game-container {
+    background-color: white;  /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #2e66a6;  /* Azul metálico */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.button img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.button p {
+    font-size: 1rem;
+    color: white;
+}
+
+.button:hover {
+    background-color: #1e4d7d;
+    transform: translateY(-5px);  /* Animación de movimiento hacia arriba */
+}
+
+#result {
+    font-size: 1.2rem;
+    color: black;
+}
+
+#score {
+    font-size: 1rem;
+    color: black;
+}

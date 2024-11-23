@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="icon" href="leviatan.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="leviatan.png" alt="Logo" class="logo">
+        <h1>Bienvenido al juego de Piedra, Papel o Tijera</h1>
+
+        <div class="login-form">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" placeholder="Ingresa tu usuario">
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" placeholder="Ingresa tu contraseña">
+            <button onclick="login()">Iniciar sesión</button>
+        </div>
+    </div>
+
+    <div class="game-container" style="display: none;">
+        <div class="buttons">
+            <button class="button" onclick="playGame('piedra')">
+                <img src="piedra.png" alt="Piedra">
+                <p>Piedra</p>
+            </button>
+            <button class="button" onclick="playGame('papel')">
+                <img src="papel.png" alt="Papel">
+                <p>Papel</p>
+            </button>
+            <button class="button" onclick="playGame('tijera')">
+                <img src="tijera.png" alt="Tijera">
+                <p>Tijera</p>
+            </button>
+        </div>
+        <div id="result"></div>
+        <div id="score">
+            <p>Puntuación del usuario: <span id="userScore">0</span></p>
+            <p>Puntuación de la computadora: <span id="computerScore">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
